@@ -1,0 +1,5 @@
+*.pyc
+/wagtail-vue-env/
+db.sqlite3
+/media/
+/backend/settings/dev.py

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>First Vue</title>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <h2>My First Vue</h2>
+    <div id="app">
+      {{message|upper}}
+    </div>
+    <script>
+      const app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello world'
+        },
+        filters: {
+          upper: function(value) {
+            return value.toUpperCase()
+          }
+        },
+      })
+    </script>
+  </body>
+</html>
